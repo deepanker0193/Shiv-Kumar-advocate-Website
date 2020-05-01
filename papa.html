@@ -1,0 +1,258 @@
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <head>
+        <LINK rel="stylesheet" type="text/css" href="papa.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <div class="header">
+            <a href="#default" class="logo">SHIV KUMAR ADVOCATE</a>
+            <div class="header-right">
+                <a href="#home">Home</a>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+            </div>
+        </div>
+        <div class="page">
+        <div class="header2">
+            <div class="slideshow">
+                <div class="myslides fade">
+                    <img id="img1" src="legal3.jpg" style="width:100%;">
+                </div>
+
+                <div class="myslides fade">
+                    <img id="img1" src="legal4.jpeg" style="width:100%;">
+                </div>
+
+                <div class="myslides fade">
+                    <img id="img1" src="legal2.jpg" style="width:100%;">
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <div style="text-align: center">
+                <span class="dot" oneclick="currentSlide(1)"></span>
+                <span class="dot" oneclick="currentSlide(2)"></span>
+                <span class="dot" oneclick="currentSlide(3)"></span>
+            </div>
+
+            <script>
+                    var slideIndex = 1;
+                    showSlides(slideIndex);
+                    
+                    function plusSlides(n) {
+                      showSlides(slideIndex += n);
+                    }
+                    
+                    function currentSlide(n) {
+                      showSlides(slideIndex = n);
+                    }
+                    
+                    function showSlides(n) {
+                      var i;
+                      var slides = document.getElementsByClassName("myslides");
+                      var dots = document.getElementsByClassName("dot");
+                      if (n > slides.length) {slideIndex = 1}    
+                      if (n < 1) {slideIndex = slides.length}
+                      for (i = 0; i < slides.length; i++) {
+                          slides[i].style.display = "none";  
+                      }
+                      for (i = 0; i < dots.length; i++) {
+                          dots[i].className = dots[i].className.replace(" active", "");
+                      }
+                      slides[slideIndex-1].style.display = "block";  
+                      dots[slideIndex-1].className += " active";
+                    }
+            </script>
+
+            <div class="top">
+                <h1>SHIV KUMAR (ADVOCATE) AND ASSOCIATES</h1>
+                <p>----Legal Practioners and Consultants in Civil, Criminal, Consumer and Corporate Matters----</p>
+            </div>    
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <div class="card">
+                    <p><i class="material-icons" style="font-size: 36px;">supervisor_account</i></p>
+                    <h3>Civil</h3>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <p><span class="icon-handcuff" style="font-size: 36px;"></span></p>
+                    <h3>Criminal</h3>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <p><i class="material-icons" style="font-size: 36px;">work</i></p>
+                    <h3>Corporate</h3>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <p><i class="fa fa-venus-mars" style="font-size: 36px;"></i></p>
+                    <h3>Marriage Disputes</h3>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <p><i class="fa fa-home" style="font-size: 36px;"></i></p>
+                    <h3>Property Disputes</h3>
+                </div>
+            </div>
+            <div class="column">
+                <div class="card">
+                    <p><i class="fa fa-balance-scale" style="font-size: 36px;"></i></p>
+                    <h3>Legal Counselling</h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio">
+                <img id="img2" src="dinu.jpg" style="max-width: 25%;">
+            <div class="column2">
+                <h1>Shiv Kumar Gupta</h1>
+                <p>Legal practitioner from 25 Years in Civil, Criminal matters.</p>
+                <div class="more2">
+                    <p>xyz</p>
+                </div>
+                <button onclick="expand()" id="myBtn2">Read More</button>
+                <script>
+                    function expand(){
+                        var moretext2 = document.getElementsByClassName("more2")[0];
+                        var myBtntext2 = document.getElementById("myBtn2");
+                        var portfolioPosition = document.getElementsByClassName("portfolio")[0];
+                        var img2filter = document.getElementById("img2");
+                        var column2port = document.getElementsByClassName("column2")[0];
+                        if(moretext2.style.display === "none"){
+                            moretext2.style.display = "block";
+                            myBtntext2.innerHTML = "Read Less";
+                            portfolioPosition.style.margin = "70px 50px 70px 5%";
+                            img2filter.style.filter = "grayscale(0%)";
+                            column2port.style.margin = "0 0 0 0";
+                            
+                        }
+                        else{
+                            moretext2.style.display = "none";
+                            myBtntext2.innerHTML = "Read More";
+                            portfolioPosition.style.margin = "70px 50px 70px 25%";
+                            img2filter.style.filter = "grayscale(100%)";
+                            column2port.style.margin = "2% 0 0 0";
+                        }
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="clients">
+            <div class="row3">
+                <div class="column3">
+                    <div class="card3">
+                        <img src="pepsico.png" style="max-height: 70px;">
+                        <h4>Pepsico India</h4>
+                    </div>
+                </div>
+                <div class="column3">
+                    <div class="card3">
+                        <img src="jaypee.png" style="max-height: 70px;">
+                        <h4>Jaypee Associates</h4>
+                    </div>
+                </div>
+                <div class="column3">
+                    <div class="card3">
+                        <img src="bsnl5.jpg" style="max-height: 70px; ">
+                        <h4>BSNL</h4>
+                        
+                    </div>
+                </div>
+                <div class="column3">
+                    <div class="card3">
+                        <img src="bpcl.png" style="max-height: 70px; ">
+                        <h4>BPCL</h4>
+                    </div>
+                </div>
+                <div class="column3">
+                    <div class="card3">
+                        <img src="essar.png" style="max-height: 70px; ">
+                        <h4>Essar Oil</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footerinner">
+                <div class="socialmedia">
+                    <div class="sm">
+                        <i class="fa fa-facebook"></i>
+                    </div>
+                    <div class="sm">
+                        <i class="fa fa-whatsapp"></i>
+                    </div>
+                    <div class="sm">
+                        <i class="fa fa-google"></i>
+                    </div>
+                    <div class="sm">
+                        <i class="fa fa-twitter"></i>
+                    </div>
+                </div>
+                <div class="address">
+                    <p>Shiv Kumar (advocate), Chamber: 82</p>
+                    <p>Courts Complex, Charkhi Dadri</p>
+                    <p>HARYANA - 127306</p>
+                    <div class="more">
+                        <p>M: +919910883443</p>
+                        <p>Email: shivkumaradvocate82@gmail.com</p>
+                        <p>Residence: Old Jhajjar Road Charkhi Dadri</p>
+                    </div>
+                    <button onclick="contact()" id="myBtn">Contact</button>
+                    <script>
+                        function contact(){
+                            var moreText = document.getElementsByClassName("more")[0];
+                            var btnText = document.getElementById("myBtn");
+                            var footInn = document.getElementsByClassName("footerinner")[0];
+                            if(moreText.style.display==="none"){
+                                moreText.style.display="block";
+                                btnText.innerHTML="Read Less";
+                                footInn.style.height = "50%";
+                            }
+                            else{
+                                moreText.style.display="none";
+                                btnText.innerHTML="Contact";
+                                footInn.style.height = "35%";
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+            <div class="last">
+                <p>INTEGRITY | QUALITY | EFFICIENCY | HONESTY</p>
+            </div>
+        </div>
+        </div>
+        <button onclick="topFunction()" id="myBtn3" title="Go to Top">Top</button>
+        <script>
+            var myTopButton = document.getElementById("myBtn3");
+
+            window.onscroll = function() {scrollFunction()};
+
+            function scrollFunction(){
+                if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+                    myTopButton.style.display = "block";
+                }
+                else{
+                    myTopButton.style.display = "none";
+                }
+            }
+
+            function topFunction(){
+                document.body.scrollTop = 0;
+                document.documentElement.scrollTop = 0;
+            }
+        </script>
+    </body>
+</html>
