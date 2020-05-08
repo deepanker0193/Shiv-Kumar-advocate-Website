@@ -7,22 +7,25 @@
     </head>
     <body>
         <div class="header">
-            <a href="#default" class="logo">SHIV KUMAR ADVOCATE</a>
+            <a href="#about" class="logo">SHIV KUMAR ADVOCATE</a>
             <div class="header-right">
                 <a href="#home">Home</a>
+                <a href="#areas">Practice Areas</a>
+                <a href="#usefullinks">Useful Links</a>
+                <a href="#clients">Clients</a>
+                <a href="#case_studies">Case Studies</a>
                 <a href="#contact">Contact</a>
-                <a href="#about">About</a>
             </div>
         </div>
         <div class="page">
         <div class="header2">
-            <div class="slideshow">
+            <div class="slideshow" id="home">
                 <div class="myslides fade">
                     <img id="img1" src="legal3.jpg" style="width:100%;">
                 </div>
 
                 <div class="myslides fade">
-                    <img id="img1" src="legal4.jpeg" style="width:100%;">
+                    <img id="img1" src="legal8.jpeg" style="width:100%;">
                 </div>
 
                 <div class="myslides fade">
@@ -69,7 +72,7 @@
                     }
             </script>
 
-            <div class="top">
+            <div class="top" id="areas">
                 <h1>SHIV KUMAR (ADVOCATE) AND ASSOCIATES</h1>
                 <p>----Legal Practioners and Consultants in Civil, Criminal, Consumer and Corporate Matters----</p>
             </div>    
@@ -114,13 +117,79 @@
             </div>
         </div>
 
-        <div class="portfolio">
-                <img id="img2" src="dinu.jpg" style="max-width: 25%;">
+        <div class="links" id="usefullinks">
+            <h2 style="color: brown; padding:20px; text-align:center;">Useful Links</h2>
+            <div class="row5">
+                <div class="column5">
+                    <a href="https://services.ecourts.gov.in/ecourtindia_v6/">
+                    <div class="card5">
+                        <div class="ecourts">
+                            <img src="ecourts6.jpg" style="max-height: 150px;"> 
+                            <h3>District Courts Services</h3>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="column5">
+                    <a href="https://haryanapoliceonline.gov.in/ViewFIR/FIRStatusSearch.aspx?From=LFhlihlx/W49VSlBvdGc4w==">
+                    <div class="card5">
+                        <div class="firsearch">
+                            <img src="hp3.jpeg" style="max-height: 150px">
+                            <h3>FIR Search</h3>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="column5">
+                    <a href="http://digitalpolicecitizenservices.gov.in/centercitizen/login.htm;jsessionid=67a3b62f9279f1edae83414c28ac">
+                    <div class="card5">
+                        <div class="cctns">
+                            <img src="cctns2.png" style="max-height: 150px">
+                            <h3>NCRB(CCTNS)- Central Citizen Services</h3>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="column5">
+                    <a href="https://ncrb.gov.in/downloads-0">
+                    <div class="card5">
+                        <div class="ncrbdownloads">
+                            <img src="ncrb2.jpg" style="max-height: 150px">
+                            <h3>NCRB - Downloads</h3>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="column5">
+                    <a href="https://www.onlineocr.net/">
+                    <div class="card5">
+                        <div class="onlineocr">
+                            <img src="onlineocr.png" style="max-height: 150px">
+                            <h3>Text Converter</h3>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="column5">
+                    <a href="https://translate.google.com/#view=home&op=translate&sl=auto&tl=hi&text=happy">
+                    <div class="card5">
+                        <div class="texttranslate">
+                            <img src="googletranslate.png" style="max-height: 150px">
+                            <h3>Translate Text</h3>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="portfolio" id="about">
+                <img id="img2" src="papa.jpg" style="max-width: 25%;">
             <div class="column2">
                 <h1>Shiv Kumar Gupta</h1>
-                <p>Legal practitioner from 25 Years in Civil, Criminal matters.</p>
+                <p>Legal practitioner since 1995 in Civil, Criminal matters.</p>
                 <div class="more2">
-                    <p>xyz</p>
+                    <p></p>
                 </div>
                 <button onclick="expand()" id="myBtn2">Read More</button>
                 <script>
@@ -133,7 +202,7 @@
                         if(moretext2.style.display === "none"){
                             moretext2.style.display = "block";
                             myBtntext2.innerHTML = "Read Less";
-                            portfolioPosition.style.margin = "70px 50px 70px 5%";
+                            portfolioPosition.style.margin = "20px 50px 70px 5%";
                             img2filter.style.filter = "grayscale(0%)";
                             column2port.style.margin = "0 0 0 0";
                             
@@ -141,7 +210,7 @@
                         else{
                             moretext2.style.display = "none";
                             myBtntext2.innerHTML = "Read More";
-                            portfolioPosition.style.margin = "70px 50px 70px 25%";
+                            portfolioPosition.style.margin = "20px 50px 70px 25%";
                             img2filter.style.filter = "grayscale(100%)";
                             column2port.style.margin = "2% 0 0 0";
                         }
@@ -149,7 +218,8 @@
                 </script>
             </div>
         </div>
-        <div class="clients">
+        <div class="clients" id="clients">
+            <h2 style="padding: 20px 0 20px 60px; color: brown;">Clients</h2>
             <div class="row3">
                 <div class="column3">
                     <div class="card3">
@@ -184,7 +254,91 @@
                 </div>
             </div>
         </div>
-        <div class="footer">
+
+        <div class="caseStudies" id="case_studies">
+            <h1 style="padding: 20px; text-align:center; color: brown;">Case Studies</h1>
+            <div class="row4">
+                <div class="column4" onmouseover="blurring1()" onmouseout="normal1()">
+                    <div class="card4" id="card41">
+                        <img id="studyimg1" src="crime2.png" style="width: 100%; height: 100%">
+                        <div class="card4text4" id="card4text41">
+                            <h2>CRIMINAL</h2>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function blurring1(){
+                        var card4CARD41 = document.getElementById("card41");
+                        var card4img1 = document.getElementById("studyimg1");
+                        var card4TEXT41 = document.getElementById("card4text41");
+                        card4img1.style.filter = "blur(3px)";
+                        card4CARD41.style.border = "2px solid black";
+                        card4TEXT41.style.display = "block";
+                    }
+                    function normal1(){
+                        var card4CARD41 = document.getElementById("card41");
+                        var card4img1 = document.getElementById("studyimg1");
+                        var card4TEXT41 = document.getElementById("card4text41");
+                        card4img1.style.filter = "blur(0px)";
+                        card4CARD41.style.border = "none";
+                        card4TEXT41.style.display = "none";
+                    }
+                </script>
+                <div class="column4" onmouseover="blurring2()" onmouseout="normal2()">
+                    <div class="card4" id="card42">
+                        <img id="studyimg2" src="civil2.jpg" style="width: 100%; height: 100%">
+                        <div class="card4text4" id="card4text42">
+                            <h2>CIVIL</h2>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    function blurring2(){
+                        var card4CARD42 = document.getElementById("card42");
+                        var card4img2 = document.getElementById("studyimg2");
+                        var card4TEXT42 = document.getElementById("card4text42");
+                        card4img2.style.filter = "blur(3px)";
+                        card4CARD42.style.border = "2px solid black";
+                        card4TEXT42.style.display = "block";
+                    }
+                    function normal2(){
+                        var card4CARD42 = document.getElementById("card42");
+                        var card4img2 = document.getElementById("studyimg2");
+                        var card4TEXT42 = document.getElementById("card4text42");
+                        card4img2.style.filter = "blur(0px)";
+                        card4CARD42.style.border = "none";
+                        card4TEXT42.style.display = "none";
+                    }
+                </script>
+                <div class="column4" onmouseover="blurring3()" onmouseout="normal3()">
+                    <div class="card4" id="card43">
+                        <img id="studyimg3" src="disputes.jpeg" style="width: 100%; height: 100%"> 
+                        <div class="card4text4" id="card4text43">
+                            <h2>OTHER DISPUTES</h2>
+                        </div>      
+                    </div>
+                </div>
+                <script>
+                    function blurring3(){
+                        var card4CARD43 = document.getElementById("card43");
+                        var card4img3 = document.getElementById("studyimg3");
+                        var card4TEXT43 = document.getElementById("card4text43");
+                        card4img3.style.filter = "blur(3px)";
+                        card4CARD43.style.border = "2px solid black";
+                        card4TEXT43.style.display = "block";
+                    }
+                    function normal3(){
+                        var card4CARD43 = document.getElementById("card43");
+                        var card4img3 = document.getElementById("studyimg3");
+                        var card4TEXT43 = document.getElementById("card4text43");
+                        card4img3.style.filter = "blur(0px)";
+                        card4CARD43.style.border = "none";
+                        card4TEXT43.style.display = "none";
+                    }
+                </script>
+            </div>
+        </div>
+        <div class="footer" id="contact">
             <div class="footerinner">
                 <div class="socialmedia">
                     <div class="sm">
@@ -205,7 +359,7 @@
                     <p>Courts Complex, Charkhi Dadri</p>
                     <p>HARYANA - 127306</p>
                     <div class="more">
-                        <p>M: +919910883443</p>
+                        <p>M: +919896134484</p>
                         <p>Email: shivkumaradvocate82@gmail.com</p>
                         <p>Residence: Old Jhajjar Road Charkhi Dadri</p>
                     </div>

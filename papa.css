@@ -7,7 +7,7 @@ body{
 .header{
     list-style-type: none;
     margin: 0;
-    padding: 15px;
+    padding: 10px;
     top: 0;
     width: 100%;
     overflow: hidden;
@@ -15,6 +15,7 @@ body{
     position: fixed;
     z-index: 2;
     box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.4);
+    color: brown;
 }
 .page{
     z-index: 1;
@@ -28,10 +29,12 @@ body{
     font-size: 18px;
     line-height: 25px;
     border-radius: 4px;
+    color: brown;
 }
 .header a.logo{
     font-size: 20px;
     font-weight: bold;
+    color: brown;
 }
 .header a:hover{
     background-color: brown;
@@ -60,7 +63,7 @@ body{
 }
 
 .header2{
-    margin-top: 6%;
+    padding-top: 4.5%;
     text-decoration-style: solid;
     text-align: center;
     color: black;
@@ -210,8 +213,8 @@ body{
     position: relative;
     
     height: 60%;
-    margin: 70px 50px 70px 25%;
-    padding: 30px;
+    margin: 20px 50px 70px 25%;
+    padding: 100px 30px 30px 30px;
     transition: margin 1.5s ease;
 }
 #img2{
@@ -317,6 +320,9 @@ body{
 .clients{
     width: 100%;
     height: max-content;
+    margin-bottom: 10%;
+    margin-top: 5%;
+    padding-top: 5%;
 }
 .row3{
     margin: 20px 80px;
@@ -403,3 +409,82 @@ body{
 #myBtn3:hover{
     opacity: 1;
 }
+.caseStudies{
+    height: 50%;
+    width:100%;
+    margin-bottom: 10%;
+}
+
+.row4{
+    position: absolute;
+    height:inherit;
+    width: inherit;
+}
+
+.column4{
+    float: left;
+    width: 33.3%;
+    height: 100%;
+}
+
+.card4{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    transition: border 1s ease;
+}
+.card4 img{
+    transition: filter 0.3s ease;
+}
+.card4 .card4text4{
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    display: none;
+    transition: display 1s ease;
+}
+
+.links{
+    width: 100%;
+    height: max-content;
+    margin-top: 5%;
+    
+
+}
+
+.row5{
+    margin: 20px 80px;
+}
+
+.column5{
+    float: left;
+    width: 25%;
+    padding: 10px 10px;
+    height: 300px;
+    
+}
+
+.card5{
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    color: brown;
+    padding: 20px 10px 0 10px;
+    min-height: 250px;
+}
+.row5:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width:600px) {
+    .column5{
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+
+    }
+}
+
